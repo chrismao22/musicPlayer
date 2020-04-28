@@ -327,8 +327,13 @@ function domUpdate(curTime) {
 }
 
 circleControl.on('touchstart', (e) => {
-    clearInterval(lineTimer2);
+    if (mediar.stats === 'pause') {
+        return false;
+    }
 }).on('touchmove', (e) => {
+    if (mediar.stats === 'pause') {
+        return false;
+    }
     percent = Math.floor((e.changedTouches[0].clientX - controlBox.offset().left) / controlBox.offset().width * 100);
     if (percent >= 0 && percent <= 100) {
         lineBox.css({
@@ -336,23 +341,19 @@ circleControl.on('touchstart', (e) => {
         })
     }
 }).on('touchend', (e) => {
-    if(percent >= 0 && percent <= 100){
+    if (mediar.stats === 'pause') {
+        return false;
+    }
+    if(percent >= 0 && percent < 100){
         mediar.audio.currentTime = Math.floor(data[index].duration * percent / 100);
     }else if(percent < 0 ) {
         mediar.audio.currentTime = 0;
+    }else if(percent === 100 ){
+        mediar.audio.currentTime = data[index].duration;
     }else{
         mediar.audio.currentTime = data[index].duration;
     }
-    if (mediar.stats === 'pause') {
-        mediar.getAudio(data[index].audio);
-        lineControl();
-        turn();
-        mediar.play();
-        playButton.removeClass('pause');
-        playButton.addClass('playing');
-    }else{
-        mediar.play();
-    }
+    lineControl();
 })
 
 /***/ }),
