@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "image": "./images/smoke.jpg",
+        "audio": "./music/song1.mp3",
+        "song": "安河桥",
+        "album": "67373upup",
+        "singer": "那个女人",
+        "duration": 188,
+        "isLike": true
+    },
+    {
+        "id": 2,
+        "image": "./images/lana.jpg",
+        "audio": "./music/song2.mp3",
+        "song": "成都",
+        "album": "67373upup",
+        "singer": "那个女人",
+        "duration": 278,
+        "isLike": false
+    },
+    {
+        "id": 3,
+        "image": "./images/martin.jpg",
+        "audio": "./music/song3.mp3",
+        "song": "董小姐",
+        "album": "67373upup",
+        "singer": "那个女人",
+        "duration": 224,
+        "isLike": true
+    },
+    {
+        "id": 4,
+        "image": "./images/taylor1.jpg",
+        "audio": "./music/song4.mp3",
+        "song": "童话镇",
+        "album": "67373upup",
+        "singer": "那个女人",
+        "duration": 258,
+        "isLike": false
+    },
+    {
+        "id": 5,
+        "image": "images/taylor2.jpg",
+        "audio": "./music/song5.mp3",
+        "song": "Let her go",
+        "album": "67373upup",
+        "singer": "那个女人",
+        "duration": 169,
+        "isLike": false
+    }
+]

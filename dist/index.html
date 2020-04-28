@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>musicPlayer</title>
-</head>
+<link href="./css/main.css" rel="stylesheet"></head>
+
 <body>
-    
-<script src="js/main.js"></script></body>
+    <div class="wrapper">
+        <div class="img_container">
+            <div class="img_box">
+                <img src="./images/smoke.jpg">
+            </div>
+        </div>
+        <div class="info_container">
+            <div class="name_box"></div>
+            <div class="star_box"></div>
+            <div class="album_box"></div>
+        </div>
+        <div class="line_container">
+            <div class="start_time_box">00:00</div>
+            <div class="line_box">
+                <div class="line_box_bottom"></div>
+                <div class="line_box_top">
+                    <div class="line_box_top_circle"></div>
+                </div>
+            </div>
+            <div class="end_time_box"></div>
+        </div>
+        <div class="control_container">
+            <div class="button_box like unlike"></div>
+            <div class="button_box prev"></div>
+            <div class="button_box play pause"></div>
+            <div class="button_box next"></div>
+            <div class="button_box list"></div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+<script src="./js/main.js"></script></body>
+
 </html>
